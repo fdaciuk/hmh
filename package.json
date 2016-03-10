@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "standard --verbose | snazzy",
+    "pretest": "npm run lint",
     "test": "node test/hmh-test.js"
   },
   "repository": {
@@ -15,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/fdaciuk/hmh/issues"
   },
-  "homepage": "https://github.com/fdaciuk/hmh#readme"
+  "homepage": "https://github.com/fdaciuk/hmh#readme",
+  "devDependencies": {
+    "snazzy": "^3.0.0",
+    "standard": "^6.0.8"
+  }
 }
