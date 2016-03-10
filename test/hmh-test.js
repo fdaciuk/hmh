@@ -12,5 +12,10 @@ console.assert(hmh.sum('10m 20m 30m 40m', 'minutes') === '100m')
 
 console.assert(hmh.sub('2h 10m') === '1h 50m')
 console.assert(hmh.sub('2h 1h 15m') === '45m')
+console.assert(hmh.sub('3h 10m') === '2h 50m')
+console.assert(hmh.sub('3h 10m', 'minutes') === '170m')
+
+console.assert(hmh.diff('10h 30m', '12h') === '1h 30m')
+console.assert(hmh.diff('10h 30m', '12h', 'minutes') === '90m')
 
 console.log('All tests passed!')

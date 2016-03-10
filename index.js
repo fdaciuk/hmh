@@ -60,21 +60,38 @@ const getResult = (allMinutes, output) => {
   return showResult(allMinutesInHours, restOfMinutes)
 }
 
-const hmh = {}
-
-hmh.sum = (value, output) => {
+const getAllMinutesAdded = (value) => {
   const obj = getObject(value)
   const hours = sumValues(obj.h)
   const minutes = sumValues(obj.m)
   const allMinutes = hoursToMinutes(hours) + minutes
-  return getResult(allMinutes, output)
+  return allMinutes
 }
 
-hmh.sub = (value, output) => {
+const getAllMinutesSubtracted = (value) => {
   const obj = getObject(value)
   const hours = subValues(obj.h)
   const minutes = subValues(obj.m)
   const allMinutes = hoursToMinutes(hours) - minutes
+  return allMinutes
+}
+
+const hmh = {}
+
+hmh.sum = (value, output) => {
+  const allMinutes = getAllMinutesAdded(value)
+  return getResult(allMinutes, output)
+}
+
+hmh.sub = (value, output) => {
+  const allMinutes = getAllMinutesSubtracted(value)
+  return getResult(allMinutes, output)
+}
+
+hmh.diff = (firstHour, secondHour, output) => {
+  const firstAllMinutes = getAllMinutesAdded(firstHour)
+  const secondAllMinutes = getAllMinutesAdded(secondHour)
+  const allMinutes = secondAllMinutes - firstAllMinutes
   return getResult(allMinutes, output)
 }
 
