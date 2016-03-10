@@ -1,7 +1,7 @@
 {
   "name": "hmh",
   "version": "0.1.0",
-  "description": "",
+  "description": "How many hours? Calculate hours easily.",
   "main": "index.js",
   "scripts": {
     "lint": "standard --verbose | snazzy",
