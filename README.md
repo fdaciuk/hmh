@@ -30,7 +30,7 @@ const sum = hmh.sum(['10m', '20m', '30m', '40m', '50m'])
 console.log(sum) // '2h 30m'
 ```
 
-If you want the output in minutes, you can pass this in the second parameter:
+If you want the output in minutes, you may pass it as a second parameter:
 
 ```js
 const sum = hmh.sum('10m 20m 30m 40m', 'minutes')
@@ -45,8 +45,8 @@ console.log(sub) // '40m'
 ```
 
 ```js
-const sub = hmh.sub('3h 10m')
-console.log(sub) // 2h 50m
+const sub = hmh.sub('3h 10m 1h')
+console.log(sub) // 1h 50m
 ```
 
 **Difference between two hours:**
@@ -69,4 +69,4 @@ console.log(diff) // '75m'
 
 ## License
 
-[MIT] &copy; Fernando Daciuk
+[MIT](https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md) &copy; Fernando Daciuk
