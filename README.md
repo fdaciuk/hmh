@@ -24,9 +24,9 @@ Value is a number, representing a time space, that must have a _suffix_ `h` (hou
 The _suffix_ needs to be stuck in the number.
 
 > By `time space`, I mean:
-  - 1 hour and 10 minutes = `1h 10m` ou `1h10m`
-  - 2 hours = `2h` or `120m`
-  - Understood? xD
+>  - 1 hour and 10 minutes = `1h 10m` or `1h10m`
+>  - 2 hours = `2h` or `120m`
+>  - Understood? xD
 
 You can use any time spaces you want, and don't worry about spaces, they will be ignored:
 
