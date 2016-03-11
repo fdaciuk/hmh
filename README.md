@@ -17,7 +17,7 @@ npm install hmh
 Pass a string or an array:
 
 ```js
-import hmh from 'hmh'
+const hmh = require('hmh')
 
 const sum = hmh.sum('10m 20m 30m 40m 50m')
 console.log(sum) // '2h 30m'
@@ -26,7 +26,7 @@ console.log(sum) // '2h 30m'
 or
 
 ```js
-import hmh from 'hmh'
+const hmh = require('hmh')
 
 const sum = hmh.sum(['10m', '20m', '30m', '40m', '50m'])
 console.log(sum) // '2h 30m'
