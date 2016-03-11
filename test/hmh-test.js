@@ -21,4 +21,9 @@ console.assert(hmh.sub('3h 10m', 'minutes') === '170m')
 console.assert(hmh.diff('10h 30m', '12h') === '1h 30m')
 console.assert(hmh.diff('10h 30m', '12h', 'minutes') === '90m')
 
+console.assert(hmh.div('3h', 3) === '1h')
+console.assert(hmh.div('10h', 5) === '2h')
+console.assert(hmh.div('7h', 4) === '1h 45m')
+console.assert(hmh.div('7h', 4, 'minutes') === '105m')
+
 console.log('All tests passed!')
