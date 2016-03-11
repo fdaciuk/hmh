@@ -4,6 +4,10 @@
   "description": "How many hours? Calculate hours easily.",
   "main": "index.js",
   "scripts": {
+    "deploy": "npm publish && git push origin master --tags",
+    "build:patch": "npm version patch && npm run deploy",
+    "build:minor": "npm version minor && npm run deploy",
+    "build:major": "npm version major && npm run deploy",
     "lint": "standard --verbose | snazzy",
     "pretest": "npm run lint",
     "test": "node test/hmh-test.js"
