@@ -1,6 +1,5 @@
 'use strict'
 
-
 const minutesToHours = (minutes) => {
   return parseInt(minutes / 60, 10)
 }
@@ -102,6 +101,12 @@ hmh.diff = (firstHour, secondHour, output) => {
   const secondAllMinutes = getAllMinutesAdded(secondHour)
   const allMinutes = secondAllMinutes - firstAllMinutes
   return getResult(allMinutes, output)
+}
+
+hmh.div = (value, divisor, output) => {
+  const allMinutes = getAllMinutesAdded(value)
+  const division = allMinutes / divisor
+  return getResult(division, output)
 }
 
 module.exports = hmh
