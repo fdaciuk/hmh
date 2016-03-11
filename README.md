@@ -2,6 +2,8 @@
 
 > Calculate hours
 
+[![Build Status][travis-image]][travis-url]
+
 ## Installation
 
 ```js
@@ -65,8 +67,13 @@ console.log(diff) // '75m'
 
 ## Related
 
-[hmh-cli](https://github.com/fdaciuk/hmh-cli)
+[hmh-cli][hmh-cli-url]
 
 ## License
 
-[MIT](https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md) &copy; Fernando Daciuk
+[MIT][license-url] &copy; Fernando Daciuk
+
+[travis-image]: https://travis-ci.org/fdaciuk/hmh.svg?branch=master
+[travis-url]: https://travis-ci.org/fdaciuk/hmh
+[hmh-cli-url]: https://github.com/fdaciuk/hmh-cli
+[license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
