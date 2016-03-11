@@ -39,6 +39,20 @@ const sum = hmh.sum('10m 20m 30m 40m', 'minutes')
 console.log(sum) // '100m'
 ```
 
+And we don't care about spaces:
+
+```js
+const sum = hmh.sum('10h2m2h    5m')
+console.log(sum) // '12h 7m'
+```
+
+Even in array mode:
+
+```js
+const sum = hmh.sum(['10h ', '   20m', '1h', ' 42m '])
+console.log(sum) // '12h 2m'
+```
+
 **Subtract hours:**
 
 ```js

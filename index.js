@@ -27,9 +27,18 @@ const subValues = (values) => {
   ))
 }
 
+const toString = (value) => (
+  Array.isArray(value) ? value.join('') : value
+)
+
+const toArray = (value) => (
+  value.replace(/\s+/g, '').split(/(\d+[hm])/).filter((item) => item)
+)
+
 const getObject = (value) => {
-  value = Array.isArray(value) ? value : value.split(' ')
-  return value.reduce((acc, val) => {
+  const stringValue = toString(value)
+  const arrayValue = toArray(stringValue)
+  return arrayValue.reduce((acc, val) => {
     const number = Number(val.replace(/\D/, ''))
     const unit = val[val.length - 1]
     acc[unit] = acc[unit] || []
