@@ -1,6 +1,6 @@
 # hmh - How many hours?
 
-> Calculate hours
+> Calculate hours using time spaces
 
 [![Build Status][travis-image]][travis-url]
 
@@ -10,7 +10,7 @@
 npm install hmh
 ```
 
-## API Documentationo
+## API Documentation
 
 ### hmh.sum(value[, output])
 
