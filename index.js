@@ -79,7 +79,7 @@ const getAllMinutesAdded = (value) => {
 const getAllMinutesSubtracted = (value) => {
   const obj = getObject(value)
   const hours = subValues(obj.h)
-  const minutes = subValues(obj.m)
+  const minutes = sumValues(obj.m)
   const allMinutes = hoursToMinutes(hours) - minutes
   return allMinutes
 }
