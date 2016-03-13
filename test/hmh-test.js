@@ -18,6 +18,7 @@ console.assert(hmh.sub('3h 10m') === '2h 50m')
 console.assert(hmh.sub('3h 10m 1h') === '1h 50m')
 console.assert(hmh.sub('3h 10m', 'minutes') === '170m')
 console.assert(hmh.sub('1h 10m 5m') === '45m')
+console.assert(hmh.sub('1h 2h 3h') === '-4h')
 
 console.assert(hmh.diff('10h 30m', '12h') === '1h 30m')
 console.assert(hmh.diff('10h 30m', '12h', 'minutes') === '90m')
