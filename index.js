@@ -46,26 +46,29 @@ const getObject = (value) => {
   }, {})
 }
 
-const showResult = (allMinutesInHours, restOfMinutes) => {
+const showResult = (allMinutesInHours, restOfMinutes, isNegative) => {
   const showHours = (allMinutesInHours && `${allMinutesInHours}h`) || ''
   const showMinutes = (restOfMinutes && `${restOfMinutes}m`) || ''
+  const negativeSymbol = isNegative ? '-' : ''
   if (showHours && showMinutes) {
-    return `${showHours} ${showMinutes}`
+    return `${negativeSymbol}${showHours} ${showMinutes}`
   }
-  return showHours || showMinutes
+  return `${negativeSymbol}${(showHours || showMinutes)}`
 }
 
 const getResult = (allMinutes, output) => {
+  const isNegative = allMinutes < 0
+  const absoluteAllMinutes = Math.abs(allMinutes)
   if (output === 'minutes') {
-    return showResult(null, allMinutes)
+    return showResult(null, absoluteAllMinutes, isNegative)
   }
   let allMinutesInHours = 0
-  let restOfMinutes = allMinutes
-  if (allMinutes >= 60) {
-    allMinutesInHours = minutesToHours(allMinutes)
-    restOfMinutes = restMinutesToHours(allMinutes)
+  let restOfMinutes = absoluteAllMinutes
+  if (absoluteAllMinutes >= 60) {
+    allMinutesInHours = minutesToHours(absoluteAllMinutes)
+    restOfMinutes = restMinutesToHours(absoluteAllMinutes)
   }
-  return showResult(allMinutesInHours, restOfMinutes)
+  return showResult(allMinutesInHours, restOfMinutes, isNegative)
 }
 
 const getAllMinutesAdded = (value) => {
