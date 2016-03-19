@@ -44,6 +44,7 @@ console.assert(hmh.sub('1h 2h 3h') + '' === '-4h')
 console.assert(hmh.sub('1h 2h 3h').h === 4)
 console.assert(hmh.sub('1h 2h 3h').isNegative === true)
 console.assert(hmh.sub('1h 2h 3h').m === null)
+console.assert(hmh.sub([hmh.sum('1h10m', 'minutes').toString(), '10m']).toString() === '1h')
 
 console.assert(hmh.diff('10h 30m', '12h').toString() === '1h 30m')
 console.assert(hmh.diff('10h 30m', '12h') + '' === '1h 30m')
