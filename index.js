@@ -19,13 +19,6 @@ const sumValues = (values) => {
   ))
 }
 
-const subValues = (values) => {
-  if (!values) return 0
-  return values.reduce((acc, value) => (
-    acc - value
-  ))
-}
-
 const toString = (value) => (
   Array.isArray(value) ? value.join('') : value
 )
@@ -34,16 +27,23 @@ const toArray = (value) => (
   value.replace(/\s+/g, '').split(/(\d+[hm])/).filter((item) => item)
 )
 
-const getObject = (value) => {
-  const stringValue = toString(value)
-  const arrayValue = toArray(stringValue)
-  return arrayValue.reduce((acc, val) => {
+const getArrayValue = (value) => {
+  return toArray(toString(value))
+}
+
+const reduceAllValuesOnObject = (value) => {
+  return value.reduce((acc, val) => {
     const number = Number(val.replace(/\D/, ''))
     const unit = val[val.length - 1]
     acc[unit] = acc[unit] || []
     acc[unit].push(number)
     return acc
   }, {})
+}
+
+const getObject = (value) => {
+  const arrayValue = getArrayValue(value)
+  return reduceAllValuesOnObject(arrayValue)
 }
 
 const maybe = (value) => {
@@ -93,10 +93,15 @@ const getAllMinutesAdded = (value) => {
 }
 
 const getAllMinutesSubtracted = (value) => {
-  const obj = getObject(value)
-  const hours = subValues(obj.h)
+  const arrayValue = getArrayValue(value)
+  const firstValue = arrayValue.slice(0, 1)[0]
+  const firstValueInMinutes = firstValue.includes('h')
+    ? hoursToMinutes(parseInt(firstValue, 10))
+    : parseInt(firstValue, 10)
+  const obj = reduceAllValuesOnObject(arrayValue.slice(1))
+  const hours = sumValues(obj.h)
   const minutes = sumValues(obj.m)
-  const allMinutes = hoursToMinutes(hours) - minutes
+  const allMinutes = firstValueInMinutes - (hoursToMinutes(hours) + minutes)
   return allMinutes
 }
 

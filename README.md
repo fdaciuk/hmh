@@ -148,7 +148,7 @@ The result `40m` is becausea all time spaces are subtracted:
 If you want to subtract `10m` by `1h10m`, firstly you need to convert `1h10m` in just one time space. In this case, convert `1h10m` to minutes. You can do something like:
 
 ```js
-const minutes = hmh.sum('1h10m', 'minutes')
+const minutes = hmh.sum('1h10m', 'minutes').toString()
 console.log(hmh.sub([minutes, '10m']).toString()) // '1h'
 ```
 Because now, `1h10m` it's just `70m`.
