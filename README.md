@@ -6,13 +6,13 @@
 
 ## Installation
 
-```js
+```console
 npm install hmh
 ```
 
 **Note:** To install the previous version, when all methods just return a string, use:
 
-```js
+```console
 npm install hmh@1.0.5
 ```
 
