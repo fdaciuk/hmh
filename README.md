@@ -70,6 +70,28 @@ console.log(hmh.sub('1h 20m') // '40m'
 console.log(hmh.sub('3h 10m 1h') // '1h 50m'
 ```
 
+This method considers that the all time spaces should be subtracted:
+
+```js
+console.log(hmh.sub('1h10m 10m')) // 40m
+```
+
+The result `40m` is becausea all time spaces are subtracted:
+
+```console
+1h - 10m - 10m = 40m
+```
+
+If you want to subtract `10m` by `1h10m`, firstly you need to convert `1h10m` in just one time space. In this case, convert `1h10m` to minutes. You can do something like:
+
+```js
+const minutes = hmh.sum('1h10m', 'minutes')
+console.log(hmh.sub([minutes, '10m'])) // '1h'
+```
+Because now, `1h10m` it's just `70m`.
+
+`70m - 10m = 60m = 1h`. Easy? =)
+
 ### hmh.diff(firstValue, secondValue[, output])
 
 Calculate the difference between two time spaces.
