@@ -46,14 +46,27 @@ const getObject = (value) => {
   }, {})
 }
 
+const maybe = (value) => {
+  return value || null
+}
+
 const showResult = (allMinutesInHours, restOfMinutes, isNegative) => {
   const showHours = (allMinutesInHours && `${allMinutesInHours}h`) || ''
   const showMinutes = (restOfMinutes && `${restOfMinutes}m`) || ''
   const negativeSymbol = isNegative ? '-' : ''
+  let stringResult = `${negativeSymbol}${(showHours || showMinutes)}`
   if (showHours && showMinutes) {
-    return `${negativeSymbol}${showHours} ${showMinutes}`
+    stringResult = `${negativeSymbol}${showHours} ${showMinutes}`
   }
-  return `${negativeSymbol}${(showHours || showMinutes)}`
+
+  const hours = maybe(allMinutesInHours)
+  const minutes = maybe(restOfMinutes)
+  return {
+    toString: () => stringResult,
+    h: hours,
+    m: minutes,
+    isNegative
+  }
 }
 
 const getResult = (allMinutes, output) => {
