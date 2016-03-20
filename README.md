@@ -62,7 +62,7 @@ But you may want to force the output in `minutes`. That's easy! Just pass it as 
 
 ```js
 const sum = hmh.sum('10m 20m 30m 40m', 'minutes')
-console.log(sum) // '100m'
+console.log(sum.toString()) // '100m'
 ```
 
 #### Return
