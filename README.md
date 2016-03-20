@@ -72,7 +72,7 @@ Type: `Object`
 All methods return an object, with the properties `h`, `m` and `isNegative`; and the method `toString()`:
 
 ```js
-console.log(hmh.sum('1h 10m 20m 30m')) // { toString: [Function], h: 2, m: null }
+console.log(hmh.sum('1h 10m 20m 30m')) // { toString: [Function], h: 2, m: null, isNegative: false }
 ```
 
 ##### .h
