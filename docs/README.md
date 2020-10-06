@@ -1,7 +1,7 @@
-# hmh - How many hours? (Quantas horas?)
+# hmh - Quantas horas? (How many hours?)
 <p align="center">
-  <a href="README.md">English</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="docs/README.md">Português</a>&nbsp;&nbsp;&nbsp;
+  <a href="../README.md">English</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="README.md">Português</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 > Calcule horas usando espaços de tempo
@@ -168,7 +168,7 @@ A resposta é muito simples:
 console.log(hmh.diff('10h 15m', '12h').toString()) // '1h 45m'
 ```
 
-Tada! :tada: :grin:
+Tcharam! :tada: :grin:
 
 O `output` é o mesmo dos métodos acima;)
 
