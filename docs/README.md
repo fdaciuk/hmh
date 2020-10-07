@@ -114,7 +114,7 @@ console.log(hmh.sub('2h 1h').isNegative) // false
 
 Tipo: `Function` Retorno: `String`
 
-Este método retorna uma String como resultado (é o mesmo que a primeira versão retornada):
+Este método retorna uma String como resultado (é o mesmo que a primeira versão retornava):
 
 ```js
 console.log(hmh.sum('1h 2h').toString()) // '3h'
