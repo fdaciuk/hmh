@@ -174,10 +174,10 @@ The `output` is the same than above methods ;)
 
 ### hmh.div(value, divisor[, output])
 
-Divide a time space into a number, passed in `divisor` parameter.
+Divide a time space by a number, passed in `divisor` parameter.
 
 Think: you have `7h` available to finish a job, and 4 days to use all this hours.
-**How many hours** you can spent per day?
+**How many hours** can you spent per day?
 
 ```js
 console.log(hmh.div('7h', 4).toString()) // '1h 45m'
