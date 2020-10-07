@@ -46,7 +46,7 @@ console.log(hmh.sum('10m 20m 30m 40m 50m').toString()) // '2h 30m'
 console.log(hmh.sum('10h2m2h    5m').toString()) // '12h 7m'
 ```
 
-Você também pode usar array
+Você também pode usar um array:
 ```js
 console.log(hmh.sum(['10m', '   20m', ' 30m ', '40m', '50m']).toString()) // '2h 30m'
 ```
