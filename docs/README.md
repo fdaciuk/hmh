@@ -185,7 +185,7 @@ console.log(hmh.div('7h', 4).toString()) // '1h 45m'
 
 :dancer: :dancer:
 
-E qual o `output`? O mesmo que os demais acima!
+E qual o `output`? O mesmo dos métodos anteriores!
 
 ## Relacionados
 
