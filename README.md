@@ -1,8 +1,6 @@
 # hmh - How many hours?
-<p align="center">
-  <a href="README.md">English</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="docs/README.md">Português</a>&nbsp;&nbsp;&nbsp;
-</p>
+<a title="English" href="README.md">:us:</a>&nbsp;&nbsp;
+<a title="Português do Brasil" href="docs/README-pt-br.md"> :brazil:</a>
 
 > Calculate hours using time spaces
 
