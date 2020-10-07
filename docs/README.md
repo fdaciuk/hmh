@@ -14,7 +14,7 @@
 npm install hmh
 ```
 
-**Observação:** para instalar a versão anterior, quando todos os métodos retornavam apenas uma string, use:
+**Observação:** para instalar a versão anterior, onde todos os métodos retornavam apenas uma string, use:
 
 ```console
 npm install hmh@1.0.5
