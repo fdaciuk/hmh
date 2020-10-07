@@ -197,5 +197,5 @@ E qual o `output`? O mesmo dos métodos anteriores!
 [travis-url]: https://travis-ci.org/fdaciuk/hmh
 [hmh-cli-url]: https://github.com/fdaciuk/hmh-cli
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
-[en-docs]: README.md
-[pt-br-docs]: docs/pt-br.md
+[en-docs]: /README.md
+[pt-br-docs]: /docs/pt-br.md
