@@ -159,7 +159,7 @@ Porque agora, `1h10m` é `70m`.
 
 ### hmh.diff(firstValue, secondValue[, output])
 
-Calcule a diferença entre dois espaços de tempo.
+Calcula a diferença entre dois espaços de tempo.
 
 Algo como: _Quantas horas eu tenho entre 10h 15m am e 12h pm? _
 A resposta é muito simples:
