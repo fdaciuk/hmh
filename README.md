@@ -4,7 +4,7 @@
 
 [![Build Status][travis-image]][travis-url]
 
-:us: [English](en-docs)&nbsp;&nbsp;|&nbsp;&nbsp;:brazil: [Português do Brasil](pt-br-docs)
+:us: [English][en-docs]&nbsp;&nbsp;|&nbsp;&nbsp;:brazil: [Português do Brasil][pt-br-docs]
 
 ## Installation
 
