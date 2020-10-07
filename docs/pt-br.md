@@ -4,7 +4,7 @@
 
 [![Build Status][travis-image]][travis-url]
 
-:us: [English](en-docs)&nbsp;&nbsp;|&nbsp;&nbsp;:brazil: [Português do Brasil](pt-br-docs)
+:us: [English][en-docs]&nbsp;&nbsp;|&nbsp;&nbsp;:brazil: [Português do Brasil][pt-br-docs]
 
 ## Instalação
 
@@ -159,7 +159,7 @@ Porque agora, `1h10m` é `70m`.
 
 Calcula a diferença entre dois espaços de tempo.
 
-Algo como: _Quantas horas eu tenho entre 10h 15m am e 12h pm? _
+Algo como: _Quantas horas eu tenho entre 10h 15m am e 12h pm?_
 A resposta é muito simples:
 
 ```js
@@ -197,3 +197,5 @@ E qual o `output`? O mesmo dos métodos anteriores!
 [travis-url]: https://travis-ci.org/fdaciuk/hmh
 [hmh-cli-url]: https://github.com/fdaciuk/hmh-cli
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
+[en-docs]: README.md
+[pt-br-docs]: docs/pt-br.md
