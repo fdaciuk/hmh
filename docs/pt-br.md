@@ -1,10 +1,10 @@
 # hmh - Quantas horas? (How many hours?)
-<a title="English" href="../README.md">:us:</a>&nbsp;&nbsp;
-<a title="Português do Brasil" href="README-pt-br.md"> :brazil:</a>
 
 > Calcule horas usando espaços de tempo
 
 [![Build Status][travis-image]][travis-url]
+
+:us: [English](en-docs)&nbsp;&nbsp;|&nbsp;&nbsp;:brazil: [Português do Brasil](pt-br-docs)
 
 ## Instalação
 
