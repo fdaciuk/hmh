@@ -1,10 +1,10 @@
 # hmh - How many hours?
-<a title="English" href="README.md">:us:</a>&nbsp;&nbsp;
-<a title="Português do Brasil" href="docs/README-pt-br.md"> :brazil:</a>
 
 > Calculate hours using time spaces
 
 [![Build Status][travis-image]][travis-url]
+
+:us: [English](en-docs)&nbsp;&nbsp;|&nbsp;&nbsp;:brazil: [Português do Brasil](pt-br-docs)
 
 ## Installation
 
@@ -199,3 +199,5 @@ And about `output`? The same than above ones!
 [travis-url]: https://travis-ci.org/fdaciuk/hmh
 [hmh-cli-url]: https://github.com/fdaciuk/hmh-cli
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
+[en-docs]: README.md
+[pt-br-docs]: docs/pt-br.md
