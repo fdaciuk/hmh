@@ -126,7 +126,7 @@ Veja o último `console.log`. Por padrão, JavaScript usa o método `toString()`
 
 ### hmh.sub(value[, output])
 
-Calcule as horas, subtraindo os espaços de tempo.
+Calcula as horas, subtraindo os espaços de tempo.
 
 As opções `value` e `output` são as mesmas do método `hmh.sum()`. A diferença é que este método subtrai espaços de tempo:
 
