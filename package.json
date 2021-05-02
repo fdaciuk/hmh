@@ -1,6 +1,6 @@
 {
   "name": "hmh",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "How many hours? Calculate hours easily.",
   "main": "index.js",
   "scripts": {
